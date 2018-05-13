@@ -4,7 +4,7 @@
 	$telephone = $_POST['telephone'];
 	$message = $_POST['message'];
 	
-	$email_from = 'amitgala4@gmail.com';
+	$email_from = 'mitulgala4@gmail.com';
 	$email_subject = "New Form Submission";
 	$email_body = "User Name: $name.\n".
 					"User Email: $visitor_email.\n".
@@ -14,7 +14,7 @@
 	$to = "jproadsideassistance@gmail.com";
 
 	$headers = "From: $email_from \r\n";
-	$headers = "Reply-To:$visitor_email \r\n;
+	$headers .= "Reply-To:$visitor_email \r\n;
 	mail($to,$email_subject,$email_body,$headers);
 	header("Location: index.html");
 	
