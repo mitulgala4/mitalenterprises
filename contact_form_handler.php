@@ -1,13 +1,13 @@
 <?php
-	$name = $_Post['name'];
-	$visitor_email = $_Post['email'];
-	$telephone = $_Post['telephone'];
-	$message = $_Post['message'];
+	$name = $_POST['name'];
+	$visitor_email = $_POST['email'];
+	$telephone = $_POST['telephone'];
+	$message = $_POST['message'];
 	
 	$email_from = 'amitgala4@gmail.com';
 	$email_subject = "New Form Submission";
 	$email_body = "User Name: $name.\n".
-					"User Email: $visitor_emailemail.\n".
+					"User Email: $visitor_email.\n".
 					"User Number: $telephone.\n".
 					"User Message: $message.\n";
 					
